@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #fff9fc;
+  color: #42566b;
+  font-family: Georgia, serif;
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+}
+
+header{
+  background-color: #f8dce5;
+  text-align: center;
+  padding-top: 30px;
+}
+
+header h1{
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+nav{
+  background-color: #dceef8;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 18px;
+}
+
+nav a{
+  color: #42566b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #964b69;
+}
+
+main {
+  text-align: center;
+  padding: 50px 20px;
+  flex: 1;
+}
+
+footer {
+  background-color: #dceef8;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Homepage welcome section */
+
+#hero{
+  background-color: #dceef8;
+  padding: 50px 30px;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+#order-button {
+  display: inline-block;
+  background-color: #f8dce5;
+  color: #42566b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+
+#order-button:hover {
+  background-color: #e9b5c8;
+}
+
+#hero-text{
+  flex: 1;
+}
+
+#hero-image{
+  width: 45%;
+  border-radius: 15px;
+}
+
+/* phone layout */
+
+@media (max-width: 768px){
+
+  #hero{
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  #hero-image {
+    width: 100%;
+  }
+
+  #hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    gap: 15px;
+  }
+}
+
+/* Made for every occasion section */
+#occasions {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px 20px;
+}
+
+#occasions h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+#occasions p{
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+}
+
+#occasion-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.occasion-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.occasion-card h3 {
+  margin-top: 15px;
+}
+
+#menu-button{
+  display: inline-block;
+  background-color: #dceef8;
+  color: #42566b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+#menu-button:hover {
+  background-color: #b8d8eb;
+}
+
+.page {
+  --background: #fafafa;
+  --foreground: #fff;
+
+  --text-primary: #000;
+  --text-secondary: #666;
+
+  --button-primary-hover: #383838;
+  --button-secondary-hover: #f2f2f2;
+  --button-secondary-border: #ebebeb;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-geist-sans);
+  background-color: var(--background);
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--foreground);
+  padding: 120px 60px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 24px;
+}
+
+.intro h1 {
+  max-width: 320px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -2.4px;
+  text-wrap: balance;
+  color: var(--text-primary);
+}
+
+.intro p {
+  max-width: 440px;
+  font-size: 18px;
+  line-height: 32px;
+  text-wrap: balance;
+  color: var(--text-secondary);
+}
+
+.intro a {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.ctas {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 440px;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.ctas a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 128px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: 500;
+}
+
+a.primary {
+  background: var(--text-primary);
+  color: var(--background);
+  gap: 8px;
+}
+
+a.secondary {
+  border-color: var(--button-secondary-border);
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background: var(--button-primary-hover);
+    border-color: transparent;
+  }
+
+  a.secondary:hover {
+    background: var(--button-secondary-hover);
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 48px 24px;
+  }
+
+  .intro {
+    gap: 16px;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1.92px;
+  }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+
+  .page {
+    --background: #000;
+    --foreground: #000;
+
+    --text-primary: #ededed;
+    --text-secondary: #999;
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+    --button-secondary-border: #1a1a1a;
+  }
+}
+
+.code {
+  font-family: var(--font-geist-mono);
+  font-size: 0.9em;
+  background: color-mix(in srgb, currentColor 8%, transparent);
+  padding: 0.1em 0.4em;
+  border-radius: 6px;
+}
+
+/* Daily Bible verse section */
+
+#daily-verse {
+  background-color: #dceef8;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#daily-verse h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+#daily-verse p {
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+#daily-verse h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #964b69;
+}
+
+
+/* Tablet and phone layout */
+
+@media (max-width: 768px) {
+
+  #hero {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  #hero-image {
+    width: 100%;
+  }
+
+  #hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  #occasion-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .occasion-card img {
+    height: 180px;
+  }
+}
+
+/* Small phone layout */
+
+@media (max-width: 480px) {
+
+  #occasion-grid {
+    grid-template-columns: 1fr;
+  }
+}
