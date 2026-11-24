@@ -371,11 +371,53 @@ a.secondary {
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
+
+#menu > p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+#menu li{
+  text-align: left;
+}
 #menu-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 25px;
 
+}
+
+.menu-card{
+  background-color: #f8dce5;
+  padding: 30px 20px;
+  border: 2px solid #e9b5c8;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(66, 86, 107, 0.1);
+}
+
+.menu-card h3 {
+  margin-bottom: 20px;
+}
+
+.menu-card h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #b8a5ad;
+}
+
+.menu-card p {
+  margin-bottom: 15px;
+}
+
+.menu-card ul {
+  margin-bottom: 20px;
+}
+
+.menu-card li {
+  margin-bottom: 12px;
+  line-height: 1.6;
 }
 
 
@@ -408,6 +450,10 @@ a.secondary {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  #menu-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .occasion-card img {
     height: 180px;
   }
@@ -425,7 +471,15 @@ a.secondary {
     grid-template-columns: 1fr;
   }
 
+  #menu-grid{
+    grid-template-columns: 1 fr;
+  }
+
   #menu-grid {
     grid-template-columns: 1fr;
+  }
+
+  .menu-card{
+    padding: 25px 20px;
   }
 }
