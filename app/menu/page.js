@@ -2,7 +2,7 @@ export default function Menu() {
     return (
       <main>
         <section id="menu">
-          <h2>Our Menu</h2>
+          <h2>My Menu</h2>
           <p>Freshly baked with love for every occasion.</p>
   
           <div id="menu-grid">

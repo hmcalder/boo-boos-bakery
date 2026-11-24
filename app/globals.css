@@ -360,6 +360,24 @@ a.secondary {
   color: #964b69;
 }
 
+/* Bakery Menu Page */
+#menu {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+#menu h2{
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+#menu-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+
+}
+
 
 /* Tablet and phone layout */
 
@@ -393,6 +411,10 @@ a.secondary {
   .occasion-card img {
     height: 180px;
   }
+
+  #menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Small phone layout */
@@ -400,6 +422,10 @@ a.secondary {
 @media (max-width: 480px) {
 
   #occasion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #menu-grid {
     grid-template-columns: 1fr;
   }
 }
