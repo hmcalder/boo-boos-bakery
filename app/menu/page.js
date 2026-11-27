@@ -97,6 +97,9 @@ export default function Menu() {
                 <li>Birthday Parties</li>
                 <li>Anniversaries</li>
                 <li>General Parties</li>
+                <li>Baby Showers</li>
+                <li>Wedding Showers</li>
+                <li>Bridal Showers</li>
               </ul>
               <p>Contact for more details.</p>
             </div>
